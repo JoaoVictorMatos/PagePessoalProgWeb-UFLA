@@ -37,8 +37,8 @@ Ambas as versões possuem:
 
 Para visualizar o projeto online, acesse:
 
-- [Página com Bootstrap](https://JoaoVictorMatos.github.io/bootstrap-version/index.html/)
-- [Página com Tailwind CSS](https://JoaoVictorMatos.github.io/tailwind-version/index.html/)
+- [Página com Bootstrap](https://joaovictormatos.github.io/PagePessoalProgWeb-UFLA/bootstrap-version/)
+- [Página com Tailwind CSS](https://joaovictormatos.github.io/PagePessoalProgWeb-UFLA/taildwind-version/)
 
 ---
 
