@@ -1,0 +1,37 @@
+/* Suavização de scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Efeito Hover nos Cards */
+.card {
+  transition:
+    transform 0.2s ease,
+    shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Customização do Botão de Tema */
+#theme-toggle {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para links de navegação ativos */
+.nav-link:hover {
+  color: var(--bs-primary) !important;
+}

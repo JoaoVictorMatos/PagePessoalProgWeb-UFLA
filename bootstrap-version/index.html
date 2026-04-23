@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor | Sistemas de Informação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">JV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-outline-secondary rounded-circle">
+                            <i id="theme-icon" class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-light text-center border-bottom">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold">João Victor</h1>
+            <p class="lead fs-4 text-secondary">Sócio-fundador da <a href="https://newai.net.br" target="_blank"
+                    class="text-decoration-none">NewAi</a> | Estudante de SI (UFLA)</p>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4 text-center">Sobre Mim</h2>
+                    <p>
+                        Sou sócio-fundador e consultor na <strong>NewAi</strong>, uma consultoria focada em automação
+                        inteligente.
+                        Minha missão é ajudar empresas a ganharem escala através de RPA e integrações de sistemas. Além
+                        disso,
+                        atuo como Auxiliar de TI e curso Sistemas de Informação na UFLA.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-4"><i class="bi bi-mortarboard-fill me-2"></i>Formação Acadêmica</h3>
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Sistemas de Informação</h5>
+                            <p class="text-primary mb-1">Universidade Federal de Lavras (UFLA)</p>
+                            <p class="text-muted small">Em andamento</p>
+                            <p>Foco em engenharia de software, banco de dados e gestão de projetos tecnológicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-4"><i class="bi bi-heart-fill me-2"></i>Interesses</h3>
+                    <ul class="list-group list-group-flush bg-transparent">
+                        <li class="list-group-item bg-transparent"><i class="bi bi-check2-circle me-2 text-success"></i>
+                            Automação com n8n e Make</li>
+                        <li class="list-group-item bg-transparent"><i class="bi bi-check2-circle me-2 text-success"></i>
+                            Desenvolvimento Frontend (React)</li>
+                        <li class="list-group-item bg-transparent"><i class="bi bi-check2-circle me-2 text-success"></i>
+                            Integração de Sistemas e APIs</li>
+                        <li class="list-group-item bg-transparent"><i class="bi bi-check2-circle me-2 text-success"></i>
+                            Soluções RPA para Médias Empresas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Projetos em Destaque</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h5 class="fw-bold">Mines Web Game</h5>
+                                <i class="bi bi-controller text-primary fs-4"></i>
+                            </div>
+                            <p class="text-muted">Desenvolvimento de uma versão web do clássico jogo Campo Minado. O
+                                projeto foca na lógica de algoritmos para detecção de bombas e expansão de áreas vazias.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-light border">JavaScript Vanilla</span>
+                                <span class="badge text-bg-light border">DOM Manipulation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h5 class="fw-bold">Sistema de Agendamento Odontológico</h5>
+                                <i class="bi bi-calendar-check text-primary fs-4"></i>
+                            </div>
+                            <p class="text-muted">Automação de fluxo para clínicas odontológicas. O sistema gerencia o
+                                pré-atendimento e automatiza o agendamento de consultas via interface web.</p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-light border">Web Services</span>
+                                <span class="badge text-bg-light border">Workflow Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Vamos conversar?</h2>
+            <p class="mb-5">Estou sempre aberto a novos projetos, colaborações e troca de conhecimentos.</p>
+            <div class="row justify-content-center g-3">
+                <div class="col-auto">
+                    <a href="https://github.com/JoaoVictorMatos" target="_blank" class="btn btn-outline-light px-4">
+                        <i class="bi bi-github me-2"></i>GitHub
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="mailto:seu-email@dominio.com" class="btn btn-primary px-4">
+                        <i class="bi bi-envelope-at me-2"></i>E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center text-muted border-top">
+        <div class="container">
+            <p class="mb-0">© 2026 João Victor - Desenvolvido para a disciplina de Programação Web (UFLA)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

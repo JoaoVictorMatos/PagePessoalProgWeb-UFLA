@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor | Portfólio Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        /* Transição suave para o Dark Mode */
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+
+    <nav
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-2xl font-bold tracking-tighter text-primary">JV</span>
+
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#sobre" class="hover:text-primary transition-colors">Sobre</a>
+                <a href="#formacao" class="hover:text-primary transition-colors">Formação</a>
+                <a href="#projetos" class="hover:text-primary transition-colors">Projetos</a>
+                <a href="#contato" class="hover:text-primary transition-colors">Contato</a>
+            </div>
+
+            <button id="theme-toggle"
+                class="p-2 rounded-full border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <i id="theme-icon" class="bi bi-moon-stars-fill"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="py-24 px-4 text-center bg-slate-100 dark:bg-slate-900/50">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-black mb-4 tracking-tight">João Victor</h1>
+            <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-8">
+                Sócio-fundador da <a href="https://newai.net.br" target="_blank"
+                    class="text-primary hover:underline">NewAi</a> | Estudante de SI na UFLA
+            </p>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-20 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
+            <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+                Como fundador da <strong>NewAi</strong>, trabalho desenvolvendo soluções de automação que otimizam o dia
+                a dia de negócios.
+                Concilio minha veia empreendedora com a formação acadêmica na UFLA e minha experiência prática como
+                Auxiliar de Tecnologia da Informação.
+            </p>
+        </div>
+    </section>
+
+    <section id="formacao" class="py-20 px-4 bg-slate-100 dark:bg-slate-900/30">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <i class="bi bi-mortarboard-fill mr-3 text-primary"></i> Formação Acadêmica
+                </h3>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border dark:border-slate-700">
+                    <h4 class="text-xl font-bold">Sistemas de Informação</h4>
+                    <p class="text-primary font-medium">Universidade Federal de Lavras (UFLA)</p>
+                    <p class="text-sm text-slate-500 mb-4">Em andamento</p>
+                    <p class="text-slate-600 dark:text-slate-400">Foco em engenharia de software, banco de dados e
+                        gestão de projetos tecnológicos.</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <i class="bi bi-heart-fill mr-3 text-primary"></i> Interesses
+                </h3>
+                <ul class="space-y-4">
+                    <li
+                        class="flex items-center p-4 bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700">
+                        <i class="bi bi-check2-circle text-green-500 mr-3 text-xl"></i> Automação com n8n e Make
+                    </li>
+                    <li
+                        class="flex items-center p-4 bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700">
+                        <i class="bi bi-check2-circle text-green-500 mr-3 text-xl"></i> Desenvolvimento Frontend (React)
+                    </li>
+                    <li
+                        class="flex items-center p-4 bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700">
+                        <i class="bi bi-check2-circle text-green-500 mr-3 text-xl"></i> Integração de Sistemas e APIs
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Projetos em Destaque</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border dark:border-slate-700 hover:border-primary transition-all shadow-sm hover:shadow-xl">
+                    <div class="flex justify-between mb-4">
+                        <h3 class="text-2xl font-bold">Mines Web Game</h3>
+                        <i class="bi bi-controller text-primary text-3xl"></i>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">Versão web do clássico jogo Campo Minado. Foco em
+                        lógica de algoritmos e manipulação de DOM.</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded text-xs font-bold uppercase">JS
+                            Vanilla</span>
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded text-xs font-bold uppercase">Algorithms</span>
+                    </div>
+                </div>
+                <div
+                    class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border dark:border-slate-700 hover:border-primary transition-all shadow-sm hover:shadow-xl">
+                    <div class="flex justify-between mb-4">
+                        <h3 class="text-2xl font-bold">Sistema Odontológico</h3>
+                        <i class="bi bi-calendar-check text-primary text-3xl"></i>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">Automação de pré-atendimento para clínicas.
+                        Gerencia agendamentos via interface web intuitiva.</p>
+                    <div class="flex gap-2">
+                        <span
+                            class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded text-xs font-bold uppercase">Automation</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded text-xs font-bold uppercase">Web
+                            Services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-20 px-4 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Vamos conversar?</h2>
+            <p class="text-slate-400 mb-10 text-lg">Estou sempre aberto a novos projetos, colaborações e troca de
+                conhecimentos.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://github.com/JoaoVictorMatos" target="_blank"
+                    class="px-8 py-3 bg-white text-slate-900 rounded-full font-bold hover:bg-slate-200 transition-colors flex items-center justify-center">
+                    <i class="bi bi-github mr-2"></i> GitHub
+                </a>
+                <a href="mailto:seu-email@dominio.com"
+                    class="px-8 py-3 bg-primary text-white rounded-full font-bold hover:bg-blue-700 transition-colors flex items-center justify-center">
+                    <i class="bi bi-envelope-at mr-2"></i> E-mail
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-slate-500 border-t dark:border-slate-800">
+        <p>© 2026 João Victor - Programação Web (UFLA)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
